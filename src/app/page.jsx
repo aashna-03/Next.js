@@ -1,6 +1,8 @@
 import React from 'react'
 import HeaderPage from './Header/HeaderPage'
 import Button from "@components/Button"
+import Footer from'../Components/Footer'
+
 
 const page = () => {
   return (
@@ -10,6 +12,7 @@ const page = () => {
 
     <HeaderPage/>
     <Button/>
+    <Footer/>
  
 
     
