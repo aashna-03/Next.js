@@ -1,8 +1,17 @@
+"use client"
 import React from 'react'
 import pic from "/public/hp.jpg"
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'; 
 
-const Home = () => {
+function Home  ()  {
+  const router = useRouter();
+
+  const handleClick = () => {
+    console.log('going');
+    router.push('/Login');
+  };
+
   return (
     <div className="relative w-screen h-screen">
       <Image
@@ -34,6 +43,12 @@ const Home = () => {
             <br />
             Founders of PLANTZ
           </p>
+          <button
+          onClick={handleClick}
+          className="items-center text-xl font-bold px-6 py-3 w-full sm:w-fit rounded-full mt-8 ml-8 bg-gradient-to-br from-green-300 via-emerald-500 to-teal-700 hover:bg-slate-200 text-white"
+        >
+          Login
+        </button>
         </div>
       </div>
     </div>
