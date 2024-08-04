@@ -28,6 +28,11 @@ function Navbar() {
             </button>
           </Link>
         </div>
+        <div> <Link href="/Products">
+            <button className="bg-transparent hover:bg-pink-800 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-900 hover:border-transparent rounded">
+              Products
+            </button>
+          </Link></div>
       </div>
     </nav>
   );
